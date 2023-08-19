@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
-
+use Yajra\Datatables\Datatables;
 
 class ProductController extends Controller
 {
@@ -13,17 +13,18 @@ class ProductController extends Controller
      */
     public function index()
     {
-     // $products=Product::all();
-    
-     return response()->json(['name'=>'Got Simple Ajax Request.']);
+
+        $products =  Product::all();
+        return DataTables::of($products)->toJson();
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create(Request $request)
+    public function create(Request $request, Product $product)
     {
-       
+        $product->fill($request->all())->save();
+        return view('home');
     }
 
     /**
@@ -31,8 +32,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product=Product::create($request->post());
-        return response()->json(['products'=>$product]);
+        $product = Product::create($request->post());
+        return response()->json(['products' => $product]);
     }
 
     /**
@@ -40,7 +41,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return view('home'); 
+        return view('home');
         return response()->json($product);
     }
 
@@ -55,10 +56,12 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request)
     {
-        $product->fill($request->post)()->save();
-        return response()->json(['products'=>$product]);
+        $data = Product::findOrFail($request->id);
+        $data->name = $request->input('name');
+        $data->save();
+        return response()->json(['success' => true]);
     }
 
     /**
@@ -69,7 +72,8 @@ class ProductController extends Controller
         $product->delete();
     }
 
-    public function new(){
-        return view('create'); 
+    public function new()
+    {
+        return view('create');
     }
 }

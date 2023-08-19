@@ -18,5 +18,8 @@ use App\Http\Controllers\ProductController;
 Route::controller(ProductController::class)->group(function () {
     Route::get('/', 'show');
     Route::get('/new', 'new')->name('new');
-    Route::post('/', 'index')->name('index');
+    Route::get('/create', 'create')->name('create');
+    Route::get('/index', 'index')->name('index');
+    Route::put('/update','update')->name('update');
+
 });
