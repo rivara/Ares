@@ -12,12 +12,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+use App\Http\Controllers\ProductController;
 
 
-Route::get('{any}', function () {
-    return view('app');
-})->where('any', '.*');
+Route::controller(ProductController::class)->group(function () {
+    Route::get('/', 'show');
+    Route::get('/new', 'new')->name('new');
+    Route::post('/', 'index')->name('index');
+});
