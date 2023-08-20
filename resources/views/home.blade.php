@@ -8,14 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href=" https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href=" https://cdn.datatables.net/select/1.7.0/css/select.dataTables.min.css">
-    <style>
-    .editable-column {
-        border: 1px solid #ccc;
-        padding: 5px;
-        cursor: pointer;
-    }
-    </style>
+
 </head>
+@vite(['resources/js/app.css','resources/js/app.js'])
 <body class="bg-light">
         <div class="container">
         <div class="py-5 text-center">

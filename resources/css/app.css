@@ -1,0 +1,6 @@
+
+.editable-column {
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
