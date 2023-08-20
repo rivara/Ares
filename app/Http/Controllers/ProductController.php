@@ -27,14 +27,6 @@ class ProductController extends Controller
         return view('home');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        $product = Product::create($request->post());
-        return response()->json(['products' => $product]);
-    }
 
     /**
      * Display the specified resource.
@@ -42,34 +34,31 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         return view('home');
-        return response()->json($product);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request)
     {
-        $data = Product::findOrFail($request->id);
-        $data->name = $request->input('name');
-        $data->save();
-        return response()->json(['success' => true]);
+        $product = Product::findOrFail($request->input('id'));
+        $product->name =  $request->input('name');
+        $product->description = $request->input('description');
+        $product->units = $request->input('units');
+        $product->save();
+        return back();
     }
+
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy(Request $request)
     {
+        $product = Product::find($request->input('id'));
         $product->delete();
+        return back();
     }
 
     public function new()

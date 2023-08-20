@@ -11,3 +11,4 @@
         "vite": "^4.0.0"
     }
 }
+                //  return '<form method="POST"  action="{{ route("delete") }}"><input type="hidden" name="id" value="'+full.id+'"><input type="hidden" name="name" value="'+full.id+'"><button type="submit"  style="margin-bottom: 10px;" class="btn btn-danger"/>  <i class="fa fa-minus"></i></button></form>';

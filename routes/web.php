@@ -20,6 +20,6 @@ Route::controller(ProductController::class)->group(function () {
     Route::get('/new', 'new')->name('new');
     Route::get('/create', 'create')->name('create');
     Route::get('/index', 'index')->name('index');
-    Route::put('/update','update')->name('update');
-
+    Route::post('/update','update')->name('update');
+    Route::post('/destroy','destroy')->name('destroy');
 });
