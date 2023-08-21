@@ -19,7 +19,7 @@ class ProductFactory extends Factory
         return [
             'name' => fake()->word(),
             'description' => fake()->word(),
-            'units' => fake()->randomNumber(60, true),
+            'units' => fake()->randomNumber(3, true),
         ];
     }
 }

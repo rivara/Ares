@@ -10,7 +10,7 @@
     <link rel="stylesheet" href=" https://cdn.datatables.net/select/1.7.0/css/select.dataTables.min.css">
 
 </head>
-@vite(['resources/js/app.css','resources/js/app.js'])
+@vite(['resources/css/app.css','resources/js/app.js'])
 <body class="bg-light">
         <div class="container">
         <div class="py-5 text-center">
