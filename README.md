@@ -33,6 +33,6 @@ At least, there must be a battery of 25 products already pre-established for the
 Home page listing.
 
 ### Laravel libraries
-https://getbootstrap.com/
+https://getbootstrap.com/<br>
 https://yajrabox.com/docs/laravel-datatables/10.0
 
