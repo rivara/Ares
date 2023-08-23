@@ -32,3 +32,7 @@ The database will be created from scratch for MySQL.
 At least, there must be a battery of 25 products already pre-established for the
 Home page listing.
 
+### Laravel libraries
+https://getbootstrap.com/
+https://yajrabox.com/docs/laravel-datatables/10.0
+

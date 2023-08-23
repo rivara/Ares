@@ -23,3 +23,7 @@ Route::controller(ProductController::class)->group(function () {
     Route::post('/update','update')->name('update');
     Route::post('/destroy','destroy')->name('destroy');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
