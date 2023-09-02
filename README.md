@@ -1,7 +1,7 @@
 # Ares
 ## CRUD of products with Laravel
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![laravel-logo-vector](https://github.com/rivara/Vulcano/assets/3527499/c6eabd1c-9a72-4d92-9fcc-216d13832b3a)
 
 
 ## TO-DO
