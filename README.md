@@ -30,7 +30,10 @@ At least, there must be a battery of 25 products already pre-established for the
 Home page listing.
 
 ## Let's go
-[video.webm](https://github.com/rivara/Ares/assets/3527499/dd37fbad-4b56-41cc-9a3f-21a870faf446)
+https://github.com/rivara/Ares/assets/3527499/eef6fd67-363c-4c77-b282-9b8af285d1d1
+
+
+
 
 ## Laravel libraries
 https://getbootstrap.com/<br>
