@@ -47,7 +47,7 @@ class ProductController extends Controller
         $product->description = $request->input('description');
         $product->units = $request->input('units');
         $product->save();
-        return back();
+        return view('home');
     }
 
 
@@ -58,7 +58,7 @@ class ProductController extends Controller
     {
         $product = Product::find($request->input('id'));
         $product->delete();
-        return back();
+        return view('home');
     }
 
     public function new()

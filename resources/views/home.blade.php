@@ -81,8 +81,9 @@
                 {       
                     targets: [4],    
                     render : function(data, type, row){
+                         
                             // Delete form
-                            return '<form method="post"  action="{{ route("destroy") }}">@csrf <input type="hidden" name="id" value="' +row.id + '"><button type="submit"  style="margin-bottom: 10px;" class="btn btn-danger"/>  <i class="fa fa-minus"></i></button></form>';
+                            return '<form method="post"  action="{{ route("destroy") }}">@csrf <input type="hidden" name="id" value="'+row.id+'"><button type="submit"  style="margin-bottom: 10px;" class="btn btn-danger"/>  <i class="fa fa-minus"></i></button></form>';
                        
                     },
                 },
