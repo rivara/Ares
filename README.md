@@ -1,8 +1,7 @@
 # Ares
 ## CRUD of products with Laravel
 
-![laravel-logo-vector](https://github.com/rivara/Vulcano/assets/3527499/c6eabd1c-9a72-4d92-9fcc-216d13832b3a)
-
+![laravel](https://github.com/rivara/Ares/assets/3527499/4923877a-d7f9-4212-ae9f-b5fe7a805797)
 
 ## TO-DO
 You need to create a web application with Laravel (the most current version available) that is
@@ -30,7 +29,10 @@ The database will be created from scratch for MySQL.
 At least, there must be a battery of 25 products already pre-established for the
 Home page listing.
 
-### Laravel libraries
+## Let's go
+[video.webm](https://github.com/rivara/Ares/assets/3527499/dd37fbad-4b56-41cc-9a3f-21a870faf446)
+
+## Laravel libraries
 https://getbootstrap.com/<br>
 https://yajrabox.com/docs/laravel-datatables/10.0
 
