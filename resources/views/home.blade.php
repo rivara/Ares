@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    @vite(['resources/css/app.css','resources/scss/app.scss','resources/js/app.js'])
+    @vite(['resources/css/app.css','resources/sass/app.scss','resources/js/app.js'])
 </head>
 
 <body class="bg-light">
